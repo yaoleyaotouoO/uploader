@@ -10,6 +10,7 @@ import Filesize from 'react-fine-uploader/filesize';
 import Filename from 'react-fine-uploader/filename';
 import RetryButton from 'react-fine-uploader/retry-button';
 import Status from 'react-fine-uploader/status';
+import DeleteButton from 'react-fine-uploader/delete-button';
 import { environment } from '@common/utils/environment';
 import { Row, Col } from 'antd';
 
@@ -84,6 +85,10 @@ class Combine extends React.Component<ICombineProps, ICombineState> {
                 {
                     submittedFiles.map(id => {
                         return <Col className='file-content' key={id}>
+                            <DeleteButton
+                                id={id}
+                                uploader={uploader}
+                            />
                             <Thumbnail
                                 id={id}
                                 uploader={uploader}

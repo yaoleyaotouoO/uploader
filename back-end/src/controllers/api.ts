@@ -5,7 +5,7 @@ class ApiController {
     async upload(file: any) {
         console.log("uploadFile controllers file: ", file);
         const fileName = file.name;
-        const uploadPath = "./server/static";
+        const uploadPath = "./static";
         const flag = fs.existsSync(uploadPath);
 
         if (!flag) {

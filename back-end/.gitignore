@@ -2,4 +2,5 @@
 .vscode
 /lib/**/*
 /es/**/*
+/static/**/*
 package-lock.json

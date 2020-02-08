@@ -23,6 +23,7 @@ declare module 'react-fine-uploader/progress-bar';
 declare module 'react-fine-uploader/filename';
 declare module 'react-fine-uploader/retry-button';
 declare module 'react-fine-uploader/status';
+declare module 'react-fine-uploader/delete-button';
 
 interface IKeyValueMap<T = any> {
   [key: string]: T;
