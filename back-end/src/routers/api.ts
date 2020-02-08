@@ -26,5 +26,10 @@ apiRouter
 
         ctx.body = { success: true };
     })
+    .get('/test', async ctx => {
+        console.log("nginx test");
+
+        ctx.body = { success: true };
+    })
 
 export default apiRouter;
